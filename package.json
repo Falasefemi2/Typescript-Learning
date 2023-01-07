@@ -10,4 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "l
+    "lite-server": "^2.6.1"
+  }
+}
