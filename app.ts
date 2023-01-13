@@ -1,35 +1,13 @@
-// const person: {
-//   name: string;
-//   age: number;
-//   hobbies: string[];
-//   role: [number,string];
-// } = {
-//   name: "Femi",
-//   age: 30,
-//   hobbies: ["Sport", "Cooking"],
-//   role: [2, "author"],
-// };
-// person.role.push('admin')
+function add(n1: number, n2: number) : number {
+  return n1 + n2;
+}
 
+function printResult(num: number): void {
+  console.log('Result: ' + num);
+}
 
-// console.log(person);
+printResult(add(5, 12))
 
-// for (const hobby of person.hobbies) {
-//   console.log(hobby.toLocaleUpperCase());
-// }
+let combineValues: (a: number, b: number) => number;
 
-const ADMIN = 0;
-const READ_ONLY = 1;
-const AUTHOR = 2;
-
-const person = {
-    name: "Femi",
-    age: 30,
-    hobbies: ["Sport", "Cooking"],
-    role: ADMIN
-  };
-
-  if (person.role === ADMIN) {
-    console.log('READ ONLY');
-    
-  }
+combineValues = add;
